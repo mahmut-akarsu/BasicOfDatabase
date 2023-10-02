@@ -1,0 +1,53 @@
+
+1-test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+2-Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+3-Sütunların her birine göre diğer sütunları güncelleyecek 4 adet UPDATE işlemi yapalım.
+4-Sütunların her birine göre ilgili satırı silecek 4 adet DELETE işlemi yapalım.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+1-https://www.resimupload.org/r/70AebK
+2-https://imgur.com/MR9Av0y
+3-
+
+3.1)
+UPDATE employee
+SET name='test',
+	birthday='1900-10-10',
+	email='test@test.com'
+WHERE id=5;
+
+3.2)
+UPDATE employee
+SET name='Anon',
+	birthday='2000-02-03',
+	email='anon@gmail.com'
+WHERE name='Charyl';
+
+3.3)UPDATE employee
+SET name='Random',
+	birthday='2000-04-21',
+	email='random@random.com'
+WHERE birthday='2023-05-29';
+
+3.4)UPDATE employee
+SET name='Joe',
+	birthday='1990-03-04',
+	email='Joeblink@outlook.com'
+WHERE email='chartington1a@usda.gov';
+
+4.1)DELETE FROM employee
+WHERE id=1;
+
+4.2)DELETE FROM employee
+WHERE name='test';
+
+4.3)DELETE FROM employee
+WHERE birthday='2023-09-23';
+
+4.4)DELETE FROM employee
+WHERE email='wsudron1@blogs.com';
+
+
+
+
+
